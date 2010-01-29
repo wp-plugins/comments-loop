@@ -237,7 +237,7 @@ class Comments_Loop extends WP_Widget {
 		<div class="widget-cmnt-loop" style="margin-left:0px;">
 			<?php
 			cl_form_text( $this->get_field_id( 'title' ), $this->get_field_name( 'title' ), $instance['title'], '<code>title</code>' );
-			cl_form_select( $this->get_field_id( 'type' ), $this->get_field_name( 'type' ), array( 'comment' => 'Comments', 'trackback' => 'Trackbacks', 'pingback' => 'Pingbacks', 'pings' => 'Trackbacks and Pingbacks' ), $instance['type'], '<code>type</code>' );
+			cl_form_select( $this->get_field_id( 'type' ), $this->get_field_name( 'type' ), array( 'comment' => 'Comments', 'trackback' => 'Trackbacks', 'pingback' => 'Pingbacks', 'pings' => 'Trackbacks and Pingbacks' ), $instance['type'], '<code>comment_type</code>' );
 			
 			cl_form_select_n( $this->get_field_id( 'headline_tag' ), $this->get_field_name( 'headline_tag' ), $tags, $instance['headline_tag'], '<code>title_tag</code>' );
 			cl_form_select_n( $this->get_field_id( 'comment_header' ), $this->get_field_name( 'comment_header' ), $tags, $instance['comment_header'], '<code>comment_header_tag</code>' );
